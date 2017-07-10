@@ -26,8 +26,10 @@ namespace LuckyNumberProject
             int[] sixGuess = new int[6];
             for (int i = 0; i <= sixGuess.Length - 1; i++)
             {
-                Console.WriteLine("Enter one number at time");
-                sixGuess[i] = int.Parse(Console.ReadLine());
+                {
+                    Console.WriteLine("Enter one number");          
+                    sixGuess[i] = int.Parse(Console.ReadLine());
+                }
 
                 while (sixGuess[i] < lowNumber || sixGuess[i] > highNumber)
                 {
@@ -94,7 +96,6 @@ namespace LuckyNumberProject
                 Console.WriteLine("Sorry! You didn't hit the jackpot. \nThere's always next time!");
             }
          
-
 
             // Ask the player if they want to play again
             string playAgain;
